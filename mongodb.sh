@@ -24,3 +24,5 @@ else
   echo -e "Hyy $G Root user $N"
 fi
 
+cp mongo.repo /etc/yum.repos.d/mongo.repo &>> $LOGFILE
+VALIDATE $? "Copied MongoDB repo"

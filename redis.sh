@@ -1,4 +1,5 @@
 #!/bin/bash
+
 ID=$(id -u)
 R="\e[31m"
 G="\e[32m"
@@ -8,7 +9,7 @@ MONGODB_HOST=mongodb.joinaiops76.online
 
 TIMESTAMP=$(date +%F-%H-%M-%S)
 LOGFILE="/tmp/$0-$TIMESTAMP.log" 
-exec &>$LOGFILE
+
 
 echo "Script started executing at $TIMESTAMP" 
 VALIDATE() {

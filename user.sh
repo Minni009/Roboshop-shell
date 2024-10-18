@@ -52,7 +52,7 @@ VALIDATE $? "Downloading User application"
 
 cd /app 
 
-unzip -o /tmp/catalogue.zip &>> $LOGFILE
+unzip -o /tmp/user.zip &>> $LOGFILE
 VALIDATE $? "Unzipping user application" 
 
 npm install &>> $LOGFILE
